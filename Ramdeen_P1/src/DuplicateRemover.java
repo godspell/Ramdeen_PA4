@@ -1,3 +1,9 @@
+/*
+    Zahid Ramdeen
+    COP3330-19Fall 0002
+    Programming Assignment 4 - Problem 1
+ */
+
 import java.util.*;
 import java.io.*;
 
@@ -17,7 +23,7 @@ public class DuplicateRemover {
         try {
             loadFileReader(dataFile); // Throws IOException if file cannot be loaded.
             collectUniqueWords();
-            closeFileInput();
+            closeFileInput(); // Throws IOException if fails to close the file
         } catch(Exception e){
             System.out.println("Error: " + e.getMessage());
             System.exit(0);

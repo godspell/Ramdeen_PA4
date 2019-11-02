@@ -1,0 +1,7 @@
+.,*
+,, cat dogs dog roof
+cat cat dog 
+dogs 
+
+
+.,*

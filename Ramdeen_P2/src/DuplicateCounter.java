@@ -1,3 +1,9 @@
+/*
+    Zahid Ramdeen
+    COP3330-19Fall 0002
+    Programming Assignment 4 - Problem 2
+ */
+
 import java.util.*;
 import java.io.*;
 
@@ -18,7 +24,7 @@ public class DuplicateCounter {
         try{
             loadInputFile(dataFile); // Throws I/O Exception if fails to load
             populateHashMap();
-            closeInputFile();
+            closeInputFile(); // Throws I/O Exception if fails to close the file
         }catch (Exception e){
             System.out.println("Error: " + e.getMessage());
             System.exit(0);
@@ -57,12 +63,11 @@ public class DuplicateCounter {
 
     // prints the contents of wordCounter HashMap to a file
     private void printHashMap(){
-        //filePrinter
         Object[] key = wordCounter.keySet().toArray();
         Object[] val = wordCounter.values().toArray();
 
         for(int i = 0; i < key.length; i++)
-            filePrinter.printf("%-10s %s\n", key[i].toString(), val[i].toString());
+            filePrinter.printf("%-10s %s\n", key[i].toString(), val[i].toString()); // no point converting to an int b/c its being printed
         filePrinter.flush();
     }
 
