@@ -1,0 +1,11 @@
+mouse      2
+game       1
+phone      1
+cat        2
+rabbit     2
+sound      1
+bottle     2
+atom       1
+dog        1
+elephant   1
+water      1
