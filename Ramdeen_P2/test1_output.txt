@@ -1,6 +1,4 @@
-,,         1
 roof       1
 cat        3
 dogs       2
-.,*        2
 dog        2

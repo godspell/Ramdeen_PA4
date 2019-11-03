@@ -7,10 +7,10 @@
 public class Application {
 
     public static void main(String[] args) {
-        DuplicateCounter counter = new DuplicateCounter();
+        DuplicateCounter duplicateCounter = new DuplicateCounter();
 
-        counter.count("problem2.txt");
-        counter.write("unique_word_counts.txt");
+        duplicateCounter.count("problem2.txt");
+        duplicateCounter.write("unique_word_counts.txt");
 
         System.out.println("finished executing...");
     }

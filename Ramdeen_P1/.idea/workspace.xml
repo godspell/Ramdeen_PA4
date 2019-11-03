@@ -4,7 +4,13 @@
     <list default="true" id="e82fa05e-b81f-42b3-9237-72ffa63a06fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DuplicateRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateRemover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unique_words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unique_words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/out/production/Ramdeen_P2/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/out/production/Ramdeen_P2/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/out/production/Ramdeen_P2/DuplicateCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/out/production/Ramdeen_P2/DuplicateCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/src/DuplicateCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/src/DuplicateCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ramdeen_P2/test1_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ramdeen_P2/test1_output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

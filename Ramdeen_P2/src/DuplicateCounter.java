@@ -23,7 +23,7 @@ public class DuplicateCounter {
     public void count(String dataFile){
         try{
             loadInputFile(dataFile); // Throws I/O Exception if fails to load
-            populateHashMap();
+            populateHashMap(); // counts the words in file and stores it in a HashMap
             closeInputFile(); // Throws I/O Exception if fails to close the file
         }catch (Exception e){
             System.out.println("Error: " + e.getMessage());
@@ -62,12 +62,17 @@ public class DuplicateCounter {
     }
 
     // prints the contents of wordCounter HashMap to a file
+    // removes punctuation characters from the output file.
     private void printHashMap(){
         Object[] key = wordCounter.keySet().toArray();
         Object[] val = wordCounter.values().toArray();
+        String currentWord;
 
-        for(int i = 0; i < key.length; i++)
-            filePrinter.printf("%-10s %s\n", key[i].toString(), val[i].toString()); // no point converting to an int b/c its being printed
+        for(int i = 0; i < key.length; i++) {
+            currentWord = key[i].toString().replaceAll("[^a-zA-Z ]", "");
+            if (!currentWord.equals("")) // if the word is just all punctuation characters, don't print it to the file.
+                filePrinter.printf("%-10s %s\n", currentWord, val[i].toString()); // no point converting to an int b/c its being printed
+        }
         filePrinter.flush();
     }
 
