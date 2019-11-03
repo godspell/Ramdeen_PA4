@@ -9,20 +9,21 @@ import java.io.*;
 
 public class DuplicateRemover {
 
-    private HashSet<String> uniqueWords = new HashSet<String>();
+    private HashSet<String> uniqueWords;
     private FileInputStream fileInputByteStream;
     private Scanner fileScanner;
     private FileOutputStream fileOutputByteStream;
     private PrintWriter filePrinter;
 
     public DuplicateRemover(){
+        uniqueWords = new HashSet<String>();
     }
 
     // removes duplicate words from a text file (takes file path as argument)
     public void remove(String dataFile){
         try {
             loadFileReader(dataFile); // Throws IOException if file cannot be loaded.
-            collectUniqueWords();
+            collectUniqueWords(); // stores the File Information into uniqueWords HashSet
             closeFileInput(); // Throws IOException if fails to close the file
         } catch(Exception e){
             System.out.println("Error: " + e.getMessage());
@@ -50,13 +51,15 @@ public class DuplicateRemover {
     }
 
     // writes the uniqueWords to the file.
+    // removes all punctuation from the words.
     private void writeUniqueWords(){
         Object myArr[] = uniqueWords.toArray(); // convert HashSet to an array in order to read the values
         for(int i = 0; i < uniqueWords.size(); i++)
-            filePrinter.print(myArr[i].toString().trim() + " ");
+            filePrinter.println(myArr[i].toString().trim().replaceAll("[^a-zA-Z ]", "") + " ");
         filePrinter.flush();
     }
 
+    /* Methods to handle files were created to make exception handling cleaner */
     // load file and initialize instance variables
     private void loadFileReader(String dataFile) throws Exception{
         fileInputByteStream = new FileInputStream(dataFile);
